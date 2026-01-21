@@ -65,8 +65,8 @@ function playGame(userMove) {
 
   document.querySelector('.result-para').innerHTML = result;
   document.querySelector('.moves-para').innerHTML =
-    `You Pick <img src="${userMove}.jpg" class="move-icon">
-     and Computer Pick <img src="${compMove}.jpg" class="move-icon">`;
+    `You Pick <img src="img/${userMove}.jpg" class="move-icon">
+     and Computer Pick <img src="img/${compMove}.jpg" class="move-icon">`;
 
   updateScore();
 }
@@ -90,4 +90,5 @@ function resetScore() {
   localStorage.removeItem('Score');
   updateScore();
 }
+
 
